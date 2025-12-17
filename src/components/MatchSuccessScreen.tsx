@@ -74,12 +74,6 @@ export default function MatchSuccessScreen({ onNavigate }: { onNavigate: (screen
           </button>
         </div>
       </div>
-      
-      {/* Confetti Effect (decorative elements) */}
-      <div className="absolute top-20 left-20 w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
-      <div className="absolute top-32 right-16 w-2 h-2 bg-pink-400 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
-      <div className="absolute bottom-40 left-24 w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
-      <div className="absolute bottom-52 right-20 w-3 h-3 bg-purple-400 rounded-full animate-pulse" style={{animationDelay: '0.9s'}}></div>
     </div>
   );
 }

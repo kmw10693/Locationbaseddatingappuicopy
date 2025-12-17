@@ -1,6 +1,5 @@
 import { Search, Sliders, MapPin, Heart, MessageCircle, User, Map, Calendar, Users } from 'lucide-react';
 import { useState } from 'react';
-import mapImage from 'figma:asset/0ee94871021e1e6aa77385a36d83f6331f024dd1.png';
 
 export default function MapScreen({ onNavigate }: { onNavigate: (screen: number, profileData?: any) => void }) {
   const [showSearch, setShowSearch] = useState(false);
@@ -24,9 +23,9 @@ export default function MapScreen({ onNavigate }: { onNavigate: (screen: number,
       {/* Map Background Image */}
       <div className="absolute inset-0">
         <img
-          src={mapImage}
+          src="https://s3-alpha-sig.figma.com/img/0d08/afbc/e66853fe873074fe2c27393fde66e13a?Expires=1766966400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YBQANorSQvmoUMEUq1-n9u6e-mRI7ZvPkDl2vG0tx2sHR2fu~ixvTImhRiSagzX-SauRUqxCXd9riYX8nf9cJSIsppbP9YayvbBPnkdfFYczeWKxtTkx5bX2KnO0M1Ekwzln9JUoomloxYS5J~4y6rPR2uGhvgHJ5BsCZfMI~EptWS1HQaZA2-drHsFMzHhlgXiAMLrUR3tbxO73N66kQOA6L20wc4heAVlbdNsfcL7GB~v9tcHmMpN1PWPy6OKCZ9W9fyoHUstGrhd8lmXfskRn2s0ipOQL2PDWPiJfbg8ENDI0u8ouNU23BWK9z0szD4TYEbf269Z-REqSF6-Wng__"
           alt="Hongdae Map"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0e27]/70 via-[#0a0e27]/40 to-[#0a0e27]/80"></div>
       </div>
