@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --midnight-navy: #0a0e27;
+  --deep-purple: #1a0f2e;
+  --neon-purple: #a855f7;
+  --neon-pink: #ec4899;
+  --neon-mint: #6ee7b7;
+  --dark-card: #1e1b3c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ui-rounded, 'SF Pro Rounded', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, var(--midnight-navy) 0%, var(--deep-purple) 100%);
+  color: white;
+}
+
+/* Custom glow effects */
+.neon-glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3);
+}
+
+.neon-glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.5), 0 0 40px rgba(236, 72, 153, 0.3);
+}
+
+.neon-glow-mint {
+  box-shadow: 0 0 20px rgba(110, 231, 183, 0.5), 0 0 40px rgba(110, 231, 183, 0.3);
+}
+
+.soft-shadow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--neon-purple) 0%, var(--neon-pink) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hide scrollbar */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
